@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root "pages#index" 
+  resources :iniciemos
+  resources :nosotros
+  resources :contactos
+  root to: "pages#index" 
 end
 
-  
